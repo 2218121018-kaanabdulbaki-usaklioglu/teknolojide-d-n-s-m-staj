@@ -1,1 +1,1 @@
-# teknolojide-d-n-s-m-staj
+# teknolojide-donusum-sunum
