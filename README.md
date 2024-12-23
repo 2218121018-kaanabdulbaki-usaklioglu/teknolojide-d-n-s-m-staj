@@ -1,0 +1,1 @@
+# teknolojide-d-n-s-m-staj
