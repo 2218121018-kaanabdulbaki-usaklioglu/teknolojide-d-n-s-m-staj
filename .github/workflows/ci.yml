@@ -3,10 +3,10 @@ name: C Test
 on:
   push:
     branches:
-      - master  # Master branch'ine yapılan her push tetiklenecek
+      - master  # master branch'ine yapılan push tetiklenecek
   pull_request:
     branches:
-      - master  # Master branch'ine yapılan pull request'lerde de çalışacak
+      - master  # master branch'ine yapılan pull request'lerde çalışacak
 
 jobs:
   build:
