@@ -3,6 +3,8 @@
 
 void test_not_kontrolu() {
     int not;
+    // Test dosyasýna küçük bir deðiþiklik
+
 
     // Test 1: Geçerli bir not, geçme durumu
     not = 85;
