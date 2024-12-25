@@ -3,24 +3,26 @@ name: C Test
 on:
   push:
     branches:
-      - master  
+      - master  # Master branch'ine yapılan her push tetiklenecek
   pull_request:
     branches:
-      - master  
+      - master  # Master branch'ine yapılan pull request'lerde de çalışacak
 
 jobs:
   build:
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest  # GitHub Actions işlemi, Ubuntu en son sürümünde çalışacak
 
     steps:
       - name: Kodu İndir
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2  # Repository'yi indiriyoruz (code checkout)
 
-      - name: Dizin Kontrolü
-        run: ls -la  
+      # Dosya yapısını kontrol etmek için
+      - name: Dosya Yapısını Listele
+        run: ls -R  # Tüm dizin ve dosyaları listele, test_ders_notu.c dosyasının burada olduğuna emin olun
 
+      # C Derleme komutu - Dosya yolu düzeltildi
       - name: C Derleme
-        run: gcc C:\Users\kaana\OneDrive\Masaüstü\CodeBlocks\kodlama\sunumicin\test_ders_notu.c
+        run: gcc test_ders_notu.c -o test_program  # test_ders_notu.c'nin repo kök dizininde olduğunu varsayıyoruz
 
       - name: Testleri Çalıştır
-        run: ./test_program  
+        run: ./test_program  # Derlenen programı çalıştırıyoruz
