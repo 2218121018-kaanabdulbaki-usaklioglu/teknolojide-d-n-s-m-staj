@@ -1,0 +1,18 @@
+name: C Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Kodu İndir
+      uses: actions/checkout@v2
+
+    - name: C Derleme
+      run: gcc test_ders_notu.c -o test_program
+
+    - name: Testleri Çalıştır
+      run: ./test_program
