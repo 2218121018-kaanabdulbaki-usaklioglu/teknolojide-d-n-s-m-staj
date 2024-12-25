@@ -20,6 +20,7 @@ int main() {
             printf("Maalesef, dersten kaldınız.\n");
         }
     }
+    printf("Test icin yeni branch olusturdum deneme -----123456");
 
     return 0;
 }
