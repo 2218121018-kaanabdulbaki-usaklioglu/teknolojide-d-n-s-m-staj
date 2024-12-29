@@ -3,36 +3,45 @@
 
 void test_not_kontrolu() {
     int not;
-    // Test dosyasýna küçük bir deðiþiklik
+    // Test dosyasï¿½na kï¿½ï¿½ï¿½k bir deï¿½iï¿½iklik
 
 
-    // Test 1: Geçerli bir not, geçme durumu
+    // Test 1: Geï¿½erli bir not, geï¿½me durumu
     not = 85;
     if (not >= 60) {
-        printf("Test 1 geçti: Not 85, sonuç: Geçti\n");
+        printf("Test 1 geï¿½ti: Not 85, sonuï¿½: Geï¿½ti\n");
         assert(1);
     } else {
-        printf("Test 1 baþarýsýz: Not 85, sonuç: Kaldý\n");
+        printf("Test 1 baï¿½arï¿½sï¿½z: Not 85, sonuï¿½: Kaldï¿½\n");
         assert(0);
     }
 
-    // Test 2: Geçerli bir not, kalma durumu
+    // Test 2: Geï¿½erli bir not, kalma durumu
     not = 45;
     if (not >= 60) {
-        printf("Test 2 baþarýsýz: Not 45, sonuç: Geçti\n");
+        printf("Test 2 baï¿½arï¿½sï¿½z: Not 45, sonuï¿½: Geï¿½ti\n");
         assert(0);
     } else {
-        printf("Test 2 geçti: Not 45, sonuç: Kaldý\n");
+        printf("Test 2 geï¿½ti: Not 45, sonuï¿½: Kaldï¿½\n");
         assert(1);
     }
 
-    // Test 3: Geçersiz not
+    // Test 3: Geï¿½ersiz not
     not = 105;
     if (not > 100 || not < 0) {
-        printf("Test 3 geçti: Not 105, sonuç: Geçersiz\n");
+        printf("Test 3 geï¿½ti: Not 105, sonuï¿½: Geï¿½ersiz\n");
         assert(1);
     } else {
-        printf("Test 3 baþarýsýz: Not 105, sonuç: Geçerli\n");
+        printf("Test 3 baï¿½arï¿½sï¿½z: Not 105, sonuï¿½: Geï¿½erli\n");
+        assert(0);
+    }
+    // Test 4: Geï¿½ersiz not
+    not = -15;
+    if (not > 100 || not < 0) {
+        printf("Test 3 geï¿½ti: Not -15, sonuï¿½: Geï¿½ersiz\n");
+        assert(1);
+    } else {
+        printf("Test 3 baï¿½arï¿½sï¿½z: Not -15, sonuï¿½: Geï¿½erli\n");
         assert(0);
     }
 }
